@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.androidstudentclientapp.ratingActivity">
+
+    <Button
+        android:id="@+id/ButtonSave"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="save"
+        android:text="Сохранить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <TextView
+        android:id="@+id/discip"
+        android:layout_width="227dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Дисциплина"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="104dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:text="Дата"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/discip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/ratingList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discip" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discip" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="409dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingList" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:onClick="cancel"
+        android:text="Отмена"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

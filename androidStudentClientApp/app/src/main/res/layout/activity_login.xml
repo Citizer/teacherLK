@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="197dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/znakvoenki" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="187dp"
+        android:text="ВХОД"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="210dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLogin" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/custon_button"
+        android:text="ВОЙТИ"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#00BCD4"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="clikInLogin"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:width="210dp"
+        android:ems="10"
+        android:hint="Логин"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

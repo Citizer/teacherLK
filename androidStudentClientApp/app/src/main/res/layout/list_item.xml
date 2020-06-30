@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Дисциплина" />
+
+        <TextView
+            android:id="@+id/tem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тема" />
+
+        <TextView
+            android:id="@+id/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Преподаватель" />
+        <TextView
+            android:id="@+id/platoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Взвод" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="270dp"
+
+                android:textStyle="bold"
+
+                android:layout_height="wrap_content"
+                android:text="Время"/>
+            <TextView
+                android:id="@+id/room"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+
+                android:text="Аудитория"/>
+
+        </LinearLayout>
+          </LinearLayout>
+</LinearLayout>
